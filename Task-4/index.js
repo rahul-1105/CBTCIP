@@ -1,7 +1,6 @@
 const newTask = document.querySelector("#input-box");
 const taskList = document.querySelector(".todoTaskList");
 const addTaskBtn = document.querySelector("button");
-const currentTask = document.querySelector("h4");
 // console.log(taskList);
 
 addTaskBtn.addEventListener("click", () => {
@@ -27,10 +26,7 @@ addTaskBtn.addEventListener("click", () => {
       todoTask.remove();
     });
 
-    // taskCompelted-checkbox
-    // const taskCompelteCheckbox = document.querySelector("#taskCompleted");
-    const task = document.querySelector(".task");
-    
+    // taskCompelted-checkbox    
     todoTask.querySelector("#taskCompleted").addEventListener("click", (e) => {
       todoTask.classList.toggle("checked")
     });
