@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Satisfy&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #d3d3d3;
+}
+
+/* **********Header********** */
+
+header {
+  position: sticky;
+  top: 0;
+  height: 120px;
+  background-color: #fff;
+}
+
+.nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  /* border: 2px solid red; */
+  padding: 0 3rem;
+}
+
+.logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-family: "Cookie", cursive;
+  font-size: 4rem;
+  color: #fc4f00;
+  transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+  color: rgb(200, 54, 0);
+}
+
+.nav-1 .search {
+  /* width: 31rem; */
+  position: relative;
+  height: 2.5rem;
+  /* border: 1px solid red; */
+}
+
+.nav-1 #searchBar {
+  width: 31rem;
+  height: 2.5rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid rgba(43, 59, 74, 0.3);
+  border-radius: 0 15px;
+}
+
+.nav-1 .search button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2.5rem;
+  width: 6rem;
+  border: none;
+  border-radius: 0 15px 0 0;
+  background-color: #fc4f00;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-1 .login button {
+  height: 2.5rem;
+  width: 5.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #fc4f00;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-1 button:hover {
+  background-color: rgb(200, 54, 0);
+}
+
+.nav-1 .login {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav-1 .login i {
+  font-size: 30px;
+  color: #111;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-1 .login i:hover {
+  color: #fc4f00;
+}
+
+.nav-2 {
+  height: 2.5rem;
+  background-color: #ececec;
+  padding: 0 3rem;
+  border-top: 0.5px solid rgba(43, 59, 74, 0.3);
+  border-bottom: 0.5px solid rgba(43, 59, 74, 0.3);
+}
+
+.nav-2 .navLinks {
+  height: 2.5rem;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav-2 .navLinks li {
+  list-style: none;
+}
+
+.nav-2 .navLinks li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #333;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-2 .navLinks li a:hover {
+  color: #fc4f00;
+}
+
+.nav-2 .navLinks li a i {
+  margin-left: 10px;
+}
