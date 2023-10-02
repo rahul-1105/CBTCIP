@@ -163,3 +163,96 @@ header {
 .nav-2 .navLinks li a i {
   margin-left: 10px;
 }
+
+
+/* **********Main********** */
+
+main {
+  min-height: 75vh;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+
+/* **********Footer********** */
+
+footer {
+  background-color: #ececec;
+  border-top: 0.5px solid rgba(43, 59, 74, 0.3);
+  padding: 10px 48px 5px 48px;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.footerNav div {
+  width: 150px;
+}
+
+.footerNav h4 {
+  margin: 25px 0;
+  font-size: 20px;
+  color: #111;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.footerLinks li {
+  list-style: none;
+}
+
+.footerLinks li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footerLinks li a:hover {
+  color: #fc4f00;
+  padding-left: 5px;
+}
+
+.copywrite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  height: 80px;
+  font-size: 16px;
+  color: #111;
+  padding: 5px 10px 0 10px;
+  border-top: 1px solid rgba(43, 59, 74, 0.3);
+}
+
+.copywrite strong {
+    transition: all 0.3s ease;
+  }
+  
+  .copywrite strong:hover {
+    color: #fc4f00;
+  }
+
+.social-links-icons p {
+    font-weight: 600;
+    margin: 0 0 10px 15px;
+}
+
+.social-links-icons .fa-brands {
+    font-size: 20px;
+    margin-left: 15px;
+    transition: all .3s ease;
+}
+
+.social-links-icons .fa-brands:hover {
+    color: #fc4f00;
+    scale: 1.25;
+}
