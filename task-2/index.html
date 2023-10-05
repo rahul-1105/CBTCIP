@@ -30,12 +30,12 @@
             </div>
             <div class="nav-2">
                 <ul class="navLinks">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">All Product</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#product">All Product</a></li>
                     <li><a href="#">Women<i class=" fa-solid fa-caret-down"></i></a></li>
                     <li><a href="#">Men<i class=" fa-solid fa-caret-down"></i>
                     <li><a href="#">Kids</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -67,7 +67,7 @@
             </div>
         </section>
         <section>
-            <div class="card-container">
+            <div class="card-container" id="product">
                 <h2>Featured Products</h2>
                 <div class="card">
                     <div class="card-img">
@@ -145,13 +145,33 @@
                             <span class="real-price">₹1999</span>
                             <span class="discount-percentage">50%</span>
                         </div>
-                        <button id="card-content-btn">Add to Cart<i
+                        <button>Add to Cart<i
                                 class="fa-sharp fa-solid fa-cart-shopping"></i></button>
                     </div>
                 </div>
             </div>
         </section>
-        <section></section>
+        <section>
+            <div class="contact" id="contact">
+                <form action="form.php" class="form">
+                    <h3>Contact Us</h3>
+                    <div class="items">
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    </div>
+                    <div class="items">
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="items">
+                        <input type="text" name="messgae" id="messgae" placeholder="Enter your Message" required>
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="Submit">
+                    </div>
+                </form>
+                <div class="divider"></div>
+                <img src="images/11.jpg" alt="">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footerNav">

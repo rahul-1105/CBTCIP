@@ -6,6 +6,8 @@
   padding: 0;
   /* box-sizing: border-box; */
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -242,7 +244,7 @@ main {
 /* --------Banner--------- */
 
 .banner {
-  height: 500px;
+  height: 600px;
   padding: 0 3rem;
   display: grid;
   grid-template-columns: auto auto 0fr;
@@ -378,6 +380,79 @@ main {
 
 .card:hover .card-content {
   transform: translateY(-25px);
+}
+
+/* --------contact form--------- */
+
+.contact {
+  height: 600px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 3rem;
+}
+
+.contact img {
+  width: 500px;
+  height: 350px;
+}
+
+.contact .divider {
+  height: 275px;
+  border-left: 2px solid rgba(43, 59, 74, 0.3);
+  margin-left: 50px;
+}
+
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 21em;
+  width: 20em;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
+  transition: box-shadow 0.5s;
+}
+
+.contact .form:hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 20px;
+}
+
+.contact .form h3 {
+  color: #111;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.contact .items input {
+  font-size: 1rem;
+  color: rgb(20, 19, 19);
+  width: 16rem;
+  height: 2.25rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  padding: 2.25px 15px;
+  border: 1px solid rgba(43, 59, 74, 0.3);
+}
+
+.contact .btn input {
+  font-size: 18px;
+  width: 18rem;
+  height: 2.65rem;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #fc4f00;
+  transition: background-color 0.3s ease 0s;
+}
+
+.contact .btn input:hover {
+  background-color: rgb(200, 54, 0);
 }
 
 /* **********Footer********** */
