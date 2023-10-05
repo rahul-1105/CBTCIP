@@ -168,9 +168,77 @@ header {
 /* **********Main********** */
 
 main {
-  min-height: 75vh;
   display: grid;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 1fr auto auto auto;
+  overflow: hidden;
+}
+
+
+ /* --------Image Slider--------- */
+
+
+ .img-slider-container {
+  width: 100vw;
+  height: 615px;
+  position: relative;
+}
+
+.img-slider {
+  width: 500vw;
+  display: flex;
+  overflow: hidden;
+  background-color: #111;
+}
+
+.img-slider img {
+  height: 615px;
+  width: 100vw;
+  opacity: 0.5;
+  animation: changeImage 20s ease-in-out infinite alternate;
+}
+
+@keyframes changeImage {
+  20% {
+      transform: translateX(0%);
+  }
+
+  30%,
+  40% {
+      transform: translateX(-100%);
+  }
+
+  50%,
+  60% {
+      transform: translateX(-200%);
+  }
+
+  70%,
+  80% {
+      transform: translateX(-300%);
+  }
+
+  90%,
+  100% {
+      transform: translateX(-400%);
+  }
+}
+
+.image-slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.image-slider-content h1 {
+  font-size: 8rem;
+  font-family: 'Cookie', cursive;
+}
+
+.image-slider-content p {
+  font-size: 1.5rem;
 }
 
 
