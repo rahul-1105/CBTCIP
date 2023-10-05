@@ -165,7 +165,6 @@ header {
   margin-left: 10px;
 }
 
-
 /* **********Main********** */
 
 main {
@@ -174,11 +173,9 @@ main {
   overflow: hidden;
 }
 
+/* --------Image Slider--------- */
 
- /* --------Image Slider--------- */
-
-
- .img-slider-container {
+.img-slider-container {
   width: 100vw;
   height: 615px;
   position: relative;
@@ -200,27 +197,27 @@ main {
 
 @keyframes changeImage {
   20% {
-      transform: translateX(0%);
+    transform: translateX(0%);
   }
 
   30%,
   40% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   50%,
   60% {
-      transform: translateX(-200%);
+    transform: translateX(-200%);
   }
 
   70%,
   80% {
-      transform: translateX(-300%);
+    transform: translateX(-300%);
   }
 
   90%,
   100% {
-      transform: translateX(-400%);
+    transform: translateX(-400%);
   }
 }
 
@@ -235,16 +232,14 @@ main {
 
 .image-slider-content h1 {
   font-size: 8rem;
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
 }
 
 .image-slider-content p {
   font-size: 1.5rem;
 }
 
-
 /* --------Banner--------- */
-
 
 .banner {
   height: 500px;
@@ -274,16 +269,118 @@ main {
   height: 350px;
   align-self: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: box-shadow .5s;
+  transition: box-shadow 0.5s;
 }
 
 .banner img:hover {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
 }
 
+/* --------Product Card-------- */
+
+.card-container {
+  min-height: 650px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  place-content: center;
+  place-items: center;
+  gap: 4rem 2rem;
+  padding: 0rem 3rem 3rem 3rem;
+}
+
+.card-container h2 {
+  grid-column: span 5;
+  font-size: 50px;
+  color: #111;
+}
+
+.card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: box-shadow 0.5s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 20px;
+}
+
+.card-img img {
+  height: 275px;
+  width: 225px;
+}
+
+.card-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 15px;
+  background-color: #fff;
+  color: #111;
+  width: 220px;
+  transition: transform 0.5s;
+}
+
+.product-detail p {
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.product-detail p:nth-child(1) {
+  font-weight: 600;
+  color: #666;
+}
+
+.product-detail span {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.discount-price {
+  font-weight: 600;
+}
+
+.real-price {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.discount-percentage {
+  color: darkgreen;
+  font-weight: 600;
+}
+
+.card-content button {
+  align-self: center;
+  height: 40px;
+  width: 200px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #fc4f00;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  background-color: rgb(200, 54, 0);
+}
+
+.card-content button i {
+  margin-left: 10px;
+}
+
+.card:hover .card-content {
+  transform: translateY(-25px);
+}
 
 /* **********Footer********** */
-
 
 footer {
   background-color: #ececec;
@@ -343,25 +440,25 @@ footer {
 }
 
 .copywrite strong {
-    transition: all 0.3s ease;
-  }
-  
-  .copywrite strong:hover {
-    color: #fc4f00;
-  }
+  transition: all 0.3s ease;
+}
+
+.copywrite strong:hover {
+  color: #fc4f00;
+}
 
 .social-links-icons p {
-    font-weight: 600;
-    margin: 0 0 10px 15px;
+  font-weight: 600;
+  margin: 0 0 10px 15px;
 }
 
 .social-links-icons .fa-brands {
-    font-size: 20px;
-    margin-left: 15px;
-    transition: all .3s ease;
+  font-size: 20px;
+  margin-left: 15px;
+  transition: all 0.3s ease;
 }
 
 .social-links-icons .fa-brands:hover {
-    color: #fc4f00;
-    scale: 1.25;
+  color: #fc4f00;
+  scale: 1.25;
 }
